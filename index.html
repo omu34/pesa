@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="Your website keywords here">
+    <meta name="author" content="Your name or website name here">
+    <link rel="stylesheet" href="output.css">
+    <title>Pesa-Bazaar</title>
+</head>
+
+<body class="">
+
+    <div class="ml-1">
+        <nav class="relative flex items-center justify-between px-4 py-4 mb-4 ml-8 mr-10 font-normal bg-white">
+            <a class="text-xl font-bold leading-none" href="#">
+                <svg class="h-10" alt="logo" viewBox="0 0 10240 10240">
+
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M8284 9162 c-2 -207 -55 -427 -161 -667 -147 -333 -404 -644 -733 -886 -81 -59 -247 -169 -256 -169 -3 0 -18 -9 -34 -20 -26 -19 -344 -180 -354 -180 -3 0 -29 -11 -58 -24 -227 -101 -642 -225 -973 -290 -125 -25 -397 -70 -480 -80 -22 -3 -76 -9 -120 -15 -100 -13 -142 -17 -357 -36 -29 -2 -98 -7 -153 -10 -267 -15 -436 -28 -525 -40 -14 -2 -45 -7 -70 -10 -59 -8 -99 -14 -130 -20 -14 -3 -41 -7 -60 -11 -19 -3 -39 -7 -45 -8 -5 -2 -28 -6 -50 -10 -234 -45 -617 -165 -822 -257 -23 -10 -45 -19 -48 -19 -7 0 -284 -138 -340 -170 -631 -355 -1107 -842 -1402 -1432 -159 -320 -251 -633 -308 -1056 -26 -190 -27 -635 -1 -832 3 -19 7 -59 10 -89 4 -30 11 -84 17 -120 6 -36 12 -77 14 -91 7 -43 33 -174 39 -190 3 -8 7 -28 9 -45 6 -35 52 -221 72 -285 7 -25 23 -79 35 -120 29 -99 118 -283 189 -389 67 -103 203 -244 286 -298 75 -49 178 -103 196 -103 16 0 27 16 77 110 124 231 304 529 485 800 82 124 153 227 157 230 3 3 28 36 54 74 116 167 384 497 546 671 148 160 448 450 560 542 14 12 54 45 90 75 88 73 219 172 313 238 42 29 77 57 77 62 0 5 -13 34 -29 66 -69 137 -149 405 -181 602 -7 41 -14 82 -15 90 -1 8 -6 46 -10 83 -3 37 -8 77 -10 88 -2 11 -7 65 -11 122 -3 56 -8 104 -9 107 -2 3 0 12 5 19 6 10 10 8 15 -10 10 -34 167 -346 228 -454 118 -210 319 -515 340 -515 4 0 40 18 80 40 230 128 521 255 787 343 118 40 336 102 395 113 28 5 53 11 105 23 25 5 59 12 75 15 17 3 41 8 55 11 34 7 274 43 335 50 152 18 372 29 565 29 194 0 481 -11 489 -19 2 -3 -3 -6 -12 -6 -9 -1 -20 -2 -24 -3 -33 -8 -73 -16 -98 -21 -61 -10 -264 -56 -390 -90 -649 -170 -1243 -437 -1770 -794 -60 -41 -121 -82 -134 -93 l-24 -18 124 -59 c109 -52 282 -116 404 -149 92 -26 192 -51 220 -55 17 -3 64 -12 105 -21 71 -14 151 -28 230 -41 19 -3 46 -7 60 -10 14 -2 45 -7 70 -10 25 -4 56 -8 70 -10 14 -2 53 -7 88 -10 35 -4 71 -8 81 -10 10 -2 51 -6 92 -9 101 -9 141 -14 147 -21 3 -3 -15 -5 -39 -6 -24 0 -52 -2 -62 -4 -21 -4 -139 -12 -307 -22 -242 -14 -700 -7 -880 13 -41 4 -187 27 -250 39 -125 23 -274 68 -373 111 -43 19 -81 34 -86 34 -4 0 -16 -8 -27 -17 -10 -10 -37 -33 -59 -52 -166 -141 -422 -395 -592 -586 -228 -257 -536 -672 -688 -925 -21 -36 -43 -66 -47 -68 -4 -2 -8 -7 -8 -11 0 -5 -24 -48 -54 -97 -156 -261 -493 -915 -480 -935 2 -3 47 -21 101 -38 54 -18 107 -36 118 -41 58 -25 458 -138 640 -181 118 -27 126 -29 155 -35 14 -2 45 -9 70 -14 66 -15 137 -28 300 -55 37 -7 248 -33 305 -39 28 -3 84 -9 125 -13 163 -16 792 -8 913 12 12 2 58 9 102 15 248 35 423 76 665 157 58 19 134 46 170 60 86 33 344 156 348 166 2 4 8 7 13 7 14 0 205 116 303 184 180 126 287 216 466 396 282 281 511 593 775 1055 43 75 178 347 225 455 100 227 236 602 286 790 59 220 95 364 120 485 6 28 45 245 50 275 2 14 7 41 10 60 3 19 8 49 10 65 2 17 6 46 9 65 15 100 35 262 40 335 3 39 8 89 10 112 22 225 33 803 21 1043 -3 41 -7 129 -11 195 -3 66 -8 136 -10 155 -2 19 -6 76 -10 125 -3 50 -8 101 -10 115 -2 14 -6 57 -10 95 -7 72 -12 113 -20 175 -2 19 -7 55 -10 80 -6 46 -43 295 -51 340 -2 14 -9 54 -15 90 -5 36 -16 97 -24 135 -8 39 -17 84 -20 100 -12 68 -18 97 -50 248 -19 87 -47 204 -61 260 -14 56 -27 109 -29 117 -30 147 -232 810 -253 832 -4 4 -7 -23 -8 -60z">
+                    </path>
+                </svg>
+            </a>
+            <div class="ml-10 lg:hidden">
+                <button class="flex items-center p-3 text-blue-600 navbar-burger">
+                    <svg class="block w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title class="font-semibold">Mobile </title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul
+                class="absolute hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="font-normal text-black " href="#">About Us</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm font-semibold text-black hover:text-gray-500" href="#">Products</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="font-semibold text-black text-md hover:text-gray-500" href="#">Tools</a></li>
+                <li class="text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                        class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-sm font-semibold text-black hover:text-gray-500" href="#">Support</a></li>
+            </ul>
+            <a class="hidden px-6 py-2 mr-20 text-sm font-bold text-center text-white transition duration-200 bg-red-500 lg:inline-block rounded-xl"
+                href="#">M-pesa paybill<br> 151987</a>
+        </nav>
+    </div>
+    <div class="ml-5">
+        <div class="justify-center ml-20">
+            <div class="grid grid-cols-2 ml-5 md:grid-cols-3 lg:grid-cols-3">
+                <div
+                    class="order-last text-sm bg-white md:font-normal md:text-2xl focus-visible:bg-purple-50 md:order-first ">
+                    <p class="text-3xl text-red-600">
+                        Compare & Save <br>
+                        On Your <b>Insurance</b>
+                    <p class="w-full font-thin text-black sm:text-xs md:text-xl ">
+                        Get insurance cover that sets you free.
+                        Tailor it to your needs, know that you've
+                        got it covered go out and live. life happen anyway.
+                    </p>
+                    <div class="mt-4 ">
+                        <button class="w-32 h-10 text-white bg-red-500 rounded-md ">
+                            <p class="md:text-xl">Get Started</p>
+                        </button>
+                    </div>
+                    </p>
+                </div>
+                <div class="">
+                    <div class="grid grid-cols-1">
+                        <h2>me2</h2>
+                        <div class="">1</div>
+                        <div class="">2</div>
+                        <div class="">3</div>
+                        <div class="">4</div>
+                    </div>
+                </div>
+                <div class="order-first md:order-last focus-visible:bg-purple-50 ">
+                    <div class="bg-purple-50">
+                        <p class="ml-1 text-xl text-black ">
+                            Family<br>Insurance
+                            <svg width="15" height="16" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="mt-2 bg-purple-50">
+                        <p>
+                            Home<br>Insurance
+                            <svg width="15" height="16" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="mt-2 bg-purple-50">
+                        <p class="ml-1 text-xl text-black ">Seniors Health<br> Insurance
+                            <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></p>
+                    </div>
+                    
+                    <div class="bg-purple-50">4</div>
+
+
+
+
+                    
+                    <div class="mt-2 ml-40 sm:font-thin">
+                        <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+
+
+                    <div class="">
+                        
+                    </div>
+                    <div class="">
+                        <p class="ml-1 text-xl text-black ">All Insurance
+                            <br>
+                        <p class="ml-2 text-sm font-thin">Products</p>
+                        </p>
+                    </div>
+                    <div class="mt-2 ml-40 sm:font-thin">
+                        <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mt-4 ml-20">
+            <h1>me4</h1>
+            <div class="grid grid-cols-2 ml-10 md:grid-cols-8 lg:grid-cols-8">
+                <div class="">1</div>
+                <div class="">2</div>
+                <div class="">3</div>
+                <div class="">4</div>
+                <div class="">6</div>
+                <div class="">7</div>
+                <div class="">8</div>
+                <div class="">9</div>
+                <div class="">1</div>
+                <div class="">2</div>
+                <div class="">3</div>
+                <div class="">4</div>
+                <div class="">6</div>
+                <div class="">7</div>
+                <div class="">8</div>
+                <div class="">9</div>
+            </div>
+        </div>
+        <div class="mt-4 ml-20 ">
+            <h1>m5</h1>
+            <div class="grid grid-cols-1 ml-10 md:ml-10 md:grid-cols-3">
+                <div class="ml-16">1</div>
+                <div class="ml-16">2</div>
+                <div class="ml-16">3</div>
+            </div>
+        </div>
+        <div class="mt-4 ml-20 ">
+            <h1>m6</h1>
+            <div class="grid grid-cols-1 ml-10 md:ml-10 md:grid-cols-3">
+                <div class="ml-16">1</div>
+                <div class="ml-16">2</div>
+                <div class="ml-16">3</div>
+            </div>
+        </div>
+        <div class="mt-4 ml-20 ">
+            <h1>m6</h1>
+            <div class="grid grid-cols-1 ml-10 md:ml-10 md:grid-cols-3">
+                <div class="ml-16">1</div>
+                <div class="ml-16">2</div>
+                <div class="ml-16">3</div>
+            </div>
+        </div>
+        <div class="mt-4 ml-20 ">
+            <h1>me7</h1>
+            <div class="grid grid-cols-1 ml-10 md:grid-cols-3">
+                <div class="ml-16">1</div>
+                <div class="ml-16">2</div>
+                <div class="ml-16">3</div>
+
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 ml-20 md:grid-cols-2">
+            me-8
+            <div class="grid w-1/3 md:grid-cols-5 justify-items-start">
+                <div class="ml-16">1</div>
+                <div class="ml-16">2</div>
+                <div class="ml-16">3</div>
+                <div class="ml-16">4</div>
+                <div class="ml-16">5</div>
+            </div>
+            <div class="grid w-2/3 md:grid-cols-3">
+                <div class="ml-16">1</div>
+                <div class="ml-16">2</div>
+                <div class="ml-16">3</div>
+            </div>
+        </div>
+        <div class="mt-4 ml-10 ">
+            <h1>me9</h1>
+            <div class="grid grid-cols-2 ml-10 md:grid-cols-5">
+                <div class="ml-16">1</div>
+                <div class="ml-16">2</div>
+                <div class="ml-16">3</div>
+                <div class="ml-16">4</div>
+                <div class="ml-16">5</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="grid w-20 grid-cols-2 gap-2 mt-2 ml-10 mr-10 md:grid-cols-3">
+        <div class="order-last ml-8 text-sm font-thin bg-white md:order-first ">
+            <p class="text-red-600 sm">
+                Compare & Save
+                On Your <b>Insurance</b>
+            <p class="w-full font-thin text-black sm:text-xs md:text-xl ">
+                Get insurance cover that sets you free.
+                Tailor it to your needs, know that you've
+                got it covered go out and live. life happen anyway.
+            </p>
+            <div class="mt-10">
+                <button class="w-full font-medium text-white bg-red-500 rounded-lg md:uppercase ">
+                    Get Started
+                </button>
+            </div>
+            </p>
+        </div>
+        <div class="pt-2 mr-6 focus-visible:bg-purple-50">
+            <div class="grid grid-cols-2 pb-2 m-8 mt-8 ml-1 bg-purple-50">
+                <div class="">
+                    <p class="text-xl text-black ">Comprehensive
+                        <br>
+                    <p class="ml-2 text-sm font-thin">Insurance</p>
+                    </p>
+                </div>
+                <div class="mt-2 ml-40 sm:font-thin">
+                    <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 pb-2 m-8 ml-1 bg-purple-50">
+                <div class="">
+                    <p class="ml-1 text-xl text-black ">Thirparty
+                        <br>
+                    <p class="ml-2 text-sm font-thin">Insurance
+
+                    </p>
+                    </p>
+
+                </div>
+                <div class="mt-2 ml-40 sm:font-thin">
+                    <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 pb-2 m-8 ml-1 bg-purple-50">
+                <div class="">
+                    <p class="ml-1 text-xl text-black ">Adult
+                        <br>
+                    <p class="ml-2 text-sm font-thin">Insurance</p>
+                    </p>
+                </div>
+                <div class="mt-2 ml-40 sm:font-thin">
+                    <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 pb-2 m-8 ml-1 bg-purple-50">
+                <div class="">
+                    <p class="ml-1 text-xl text-black ">Travel
+                        <br>
+                    <p class="ml-2 text-sm font-thin">Insurance</p>
+                    </p>
+                </div>
+                <div class="mt-2 ml-40 sm:font-thin">
+                    <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="order-first md:order-last focus-visible:bg-purple-50 ">
+            <div class="grid grid-cols-2 pb-2 m-8 ml-1 bg-purple-50 ">
+                <div class="">
+                    <p class="ml-1 text-xl text-black ">Family
+                        <br>
+                    <p class="ml-2 text-sm font-thin">Insurance</p>
+                    </p>
+                </div>
+                <div class="mt-2 ml-40 sm:font-thin">
+                    <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 pb-2 m-8 mt-2 ml-1 bg-purple-50">
+                <div class="">
+                    <p class="ml-1 text-xl text-black ">Home
+                        <br>
+                    <p class="ml-2 text-sm font-thin">Insurance</p>
+                    </p>
+                </div>
+                <div class="mt-2 ml-40 sm:font-thin">
+                    <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="grid m-8 mt-2 ml-1 bg-purple-50 grid-cols-2pb-2">
+                <div class="">
+                    <p class="ml-1 text-xl text-black ">Seniors Health
+                        <br>
+                    <p class="ml-2 text-sm font-thin">Insurance</p>
+                    </p>
+                </div>
+                <div class="mt-2 ml-40 sm:font-thin">
+                    <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 pb-2 m-8 ml-1 bg-purple-50">
+                <div class="">
+                    <p class="ml-1 text-xl text-black ">All Insurance
+                        <br>
+                    <p class="ml-2 text-sm font-thin">Products</p>
+                    </p>
+                </div>
+                <div class="mt-2 ml-40 sm:font-thin">
+                    <svg width="15" height="16" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 20L16.5 12.5L9 5" stroke="#51526C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-sky-50">
+        <h1 class="pt-8 mb-8 ml-4 text-4xl text-center text-red-600 max-h-20">
+            Our <b class="font-normal md:font-semibold">Partners</b>
+        </h1>
+        <div class="grid grid-cols-2 ml-8 mr-8 sm:grid-cols-2 md:grid-cols-8">
+            <div class="m-2 bg-white rounded-md">
+                <img class="pt-4 pb-4 w-30 mt-7" src="pesa_logos/Logos/cic.png" alt="cic">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 pt-10 pb-10" src="pesa_logos/Logos/Monach.jpg" alt="monach">
+            </div>
+            <div class="p-1 m-2 bg-white">
+                <img class="w-40 pt-16 pb-16 " src="pesa_logos/Logos/APA.jpg" alt="apa">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 mt-16" src="pesa_logos/Logos/britam.jpg" alt="britam">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 mt-14" src="pesa_logos/Logos/jubileei.png" alt="jubilee">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 mt-8" src="pesa_logos/Logos/fidelityi.jpg" alt="fidelity">
+            </div>
+            <div class="p-1 m-2 bg-white rounded">
+                <img class="w-40 mt-8" src="pesa_logos/Logos/Amaco.jpg" alt="amaco">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 mt-16" src="pesa_logos/Logos/madison.png" alt="madison">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 p-4 ml-4 mr-4 sm:grid-cols-2 md:grid-cols-8">
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 pt-8 pb-10" src="pesa_logos/Logos/firsta.png" alt="firsta">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 pt-10 pb-10" src="pesa_logos/Logos/geminiai.jpg" alt="geminia">
+            </div>
+            <div class="p-1 m-2 bg-white">
+                <img class="w-40 pt-16 pb-16 " src="pesa_logos/Logos/oldmutual.png" alt="oldmutual">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 pt-8 pb-8" src="pesa_logos/Logos/Occidentali.jpg" alt="occidental">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 mt-4" src="pesa_logos/Logos/AAI.png" alt="aai">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40 mt-4" src="pesa_logos/Logos/AALogo.png" alt="aalogo">
+            </div>
+            <div class="p-1 m-2 bg-white rounded">
+                <img class="w-40 mt-8" src="pesa_logos/Logos/resolutioni.png" alt="resolution">
+            </div>
+            <div class="p-1 m-2 bg-white rounded-md">
+                <img class="w-40" src="pesa_logos/Logos/uap.jpg" alt="uap">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="justify-center grid-rows-1">
+        <h1 class="mt-10 mb-8 text-4xl text-center text-red-600 max-h-20">
+            How We <b>Work</b>
+        </h1>
+    </div>
+
+    <div class="grid grid-cols-1 m-8 ml-10 mr-10 md:grid-cols-3">
+        <div class="justify-between mt-2">
+            <h2 class="mb-4 text-2xl text-center text-black max-h-20">
+                information <b>Gathering</b>
+            </h2>
+            <p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptate, cupiditate
+                optio
+                asperiores aliquid vel nihil ducimus nostrum architecto quibusdam illum doloremque suscipit itaque
+                porro omnis ex, impedit unde ipsa.</p>
+        </div>
+        <div class="justify-between mt-2">
+            <h2 class="mb-4 text-2xl text-center text-black max-h-20">
+                insurance <b>comparison</b>
+            </h2>
+            <p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt, natus distinctio
+                totam
+                voluptates aliquid sequi provident delectus. Eligendi, architecto nulla tenetur dolores iste
+                dignissimos a officia! Consequuntur, optio placeat.</p>
+        </div>
+        <div class="justify-between mt-2">
+            <h2 class="mb-4 text-2xl text-center text-black max-h-20">
+                insurance <b>comparison</b>
+            </h2>
+            <p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt, natus distinctio
+                totam
+                voluptates aliquid sequi provident delectus. Eligendi, architecto nulla tenetur dolores iste
+                dignissimos a officia! Consequuntur, optio placeat.</p>
+        </div>
+    </div>
+
+
+    <div class="justify-center ml-10 mr-12">
+        <h2 class="justify-center mt-4 mb-1 ml-4 mr-4 text-xl text-black md:text-4xl">
+            Not sure what you need?
+        </h2>
+        <h2 class="justify-center mb-1 ml-16 mr-6 text-2xl text-red-600 md:text-4xl ">
+            Talk To Us
+        </h2>
+        <p class="mr-5 text-sm font-thin text-center md:text-2xl">
+            Join a community of 150,000+ customers and get your comprehensive cover today.
+        </p>
+    </div>
+    <div class="grid grid-cols-1 ml-48 mr-48 md:grid-cols-3">
+        <div class="bg-sky-100">
+            <p class="font-bold text-left text-black ">call now</p>
+            <p class="text-2xl font-medium rounded-md ">
+                008 723 340
+            </p>
+        </div>
+        <div class="">
+            <p
+                class="inline-flex items-center p-2 mt-4 text-sm font-medium text-center text-white bg-red-700 rounded-full hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+                OR
+            </p>
+        </div>
+
+        <div class="bg-sky-100">
+            <p class="font-bold text-black ">whatsapp us</p>
+            <p class="justify-center text-xl font-medium ">0791 499 944</p>
+        </div>
+    </div> -->
+
+    <!-- <div class="grid grid-cols-2 bg-blue-50">
+            <div class="gap-2 ml-16 ">
+                <h2 class="mb-4 text-xl text-left text-red-600 md:text-2xl max-h-20">Pay<b> With</b></h2>
+                <div class="grid grid-cols-2 gap-2 md:grid-cols-5 ">
+                    <div class="p-4 bg-white rounded">
+                        <img class="w-32 pb-2 pl-1 mt-1 " src="pesa_logos/Payments/matercard.png" alt="mastercard">
+                    </div>
+                    <div class="p-4 bg-white rounded-md"><img class="w-32 pb-2 mt-8 "
+                            src="pesa_logos/Payments/m-pesa.png" alt="mpesa">
+                    </div>
+                    <div class="p-4 bg-red-700 rounded-md"><img class="w-32 mt-4 " src="pesa_logos/Payments/airtel.jpg"
+                            alt="airtel"></div>
+                    <div class="p-4 bg-white rounded-md"><img class="w-32 pb-2 pl-1 mt-4 "
+                            src="pesa_logos/Payments/Pesapal.jpg" alt="pesapal"></div>
+                    <div class="p-4 bg-white rounded-md"><img class="w-32 pb-2 pl-1 mt-6 "
+                            src="pesa_logos/Payments/visa.png" alt="visa"></div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 ml-24 bg-blue-50">
+                <div class="gap-2 ">         
+                    <h2 class="mb-2 text-xl text-left text-red-600 md:text-2xl">Trusted <b>& Regulated</b>
+                    </h2>
+                    <div class="grid grid-cols-2 gap-2 md:grid-cols-3 ml-">
+                        <div class="p-4 bg-white rounded-1">
+                            <img class="w-32 pb-2 mt-8 bg-white "
+                                src="pesa_logos/Payments/comodo.png" alt="comodo">
+                        </div>
+                        <div class="p-4 bg-white rounded-md"><img class="w-32 pb-2 mt-8 "
+                                src="pesa_logos/Payments/ira.jpg" alt="IRA">
+                        </div>
+                        <div class="p-4 bg-red-700 rounded-md"><img class="w-32 mt-4 " src="pesa_logos/pa" alt="bazaar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="flex flex-col md:flex-row">
+        <!-- First column -->
+        <!-- <div class="p-4 bg-gray-200 md:w-2/3 sm:justify-center ">
+            <div class="grid grid-cols-2 bg-blue-50">
+                <div class="gap-2 ml-16 ">
+                    <h2 class="mb-4 text-xl text-left text-red-600 sm:ml md:text-2xl max-h-20">Pay<b> With</b></h2>
+                    <div class="grid grid-cols-2 gap-2 md:grid-cols-5 ">
+                        <div class="p-4 bg-white rounded">
+                            <img class="w-32 pb-2 pl-1 mt-1 " src="pesa_logos/Payments/matercard.png" alt="mastercard">
+                        </div>
+                        <div class="p-4 bg-white rounded-md"><img class="w-32 pb-2 mt-8 "
+                                src="pesa_logos/Payments/m-pesa.png" alt="mpesa">
+                        </div>
+                        <div class="p-4 bg-red-700 rounded-md"><img class="w-32 mt-4 " src="pesa_logos/Payments/airtel.jpg"
+                                alt="airtel"></div>
+                        <div class="p-4 bg-white rounded-md"><img class="w-32 pb-2 pl-1 mt-4 "
+                                src="pesa_logos/Payments/Pesapal.jpg" alt="pesapal"></div>
+                        <div class="p-4 bg-white rounded-md"><img class="w-32 pb-2 pl-1 mt-6 "
+                                src="pesa_logos/Payments/visa.png" alt="visa"></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 ml-24 bg-blue-50">
+        </div>
+      
+        Second column
+        <div class="p-4 mt-4 bg-gray-300 md:w-1/3 md:ml-4 md:mt-0">
+            <div class="grid grid-cols-2 ml-24 bg-blue-50">
+                <div class="gap-2 ">         
+                    <h2 class="mb-2 text-xl text-left text-red-600 md:text-2xl">Trusted <b>& Regulated</b>
+                    </h2>
+                    <div class="grid grid-cols-2 gap-2 md:grid-cols-3 ml-">
+                        <div class="p-4 bg-white rounded-1">
+                            <img class="w-32 pb-2 mt-8 bg-white "
+                                src="pesa_logos/Payments/comodo.png" alt="comodo">
+                        </div>
+                        <div class="p-4 bg-white rounded-md"><img class="w-32 pb-2 mt-8 "
+                                src="pesa_logos/Payments/ira.jpg" alt="IRA">
+                        </div>
+                        <div class="p-4 bg-red-700 rounded-md"><img class="w-32 mt-4 " src="pesa_logos/pa" alt="bazaar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div
+        class="w-full p-2 text-white rounded-lg shadow dark:bg-gray-800 bg-slate-600 sm:p-6 md:p-8 dark:border-gray-700">
+        <div class="grid justify-between grid-cols-5 gap-2 mt-4">
+            <div class="gap-4 ml-16">
+                <h2 class="mb-2 font-medium">OUR COMPANY</h2>
+                <div class="grid justify-between grid-rows-4">
+                    <div>About us</div>
+                    <div>Press</div>
+                    <div>Blog</div>
+                    <div>Careers</div>
+                    <div>Contact Us</div>
+                    <div>Terms $ Conditions</div>
+                </div>
+            </div>
+            <div class="ml-20">
+                <h2 class="mb-2 font-medium">PERSONAL</h2>
+                <div class="grid grid-rows-4">
+                    <div>Health</div>
+                    <div>Motar</div>
+                    <div>Life</div>
+                    <div>Other</div>
+                </div>
+            </div>
+            <div class="ml-16">
+                <h2 class="mb-2 font-medium">CORPRATE</h2>
+                <div class="grid grid-rows-4">
+                    <div>Medical</div>
+                    <div>Motor</div>
+                    <div>Life</div>
+                    <div>Assets</div>
+                    <div>Marine</div>
+                    <div>SME</div>
+                    <div>Other</div>
+                </div>
+            </div>
+            <div class="ml-12">
+                <h2 class="mb-2 font-medium">TOOLS</h2>
+                <div class="grid grid-rows-4">
+                    <div>Income TAx</div>
+                    <div>Loan Calculator</div>
+                    <div>Currency Converter</div>
+                    <div>Body Mass Index (BMS)</div>
+                </div>
+            </div>
+            <div class="ml-12">
+                <h2 class="mb-2 font-medium">FOLLOW US</h2>
+                <div class="grid grid-cols-4">
+
+                    <div><img src="" alt="fb"></div>
+                    <div><img src="" alt="tt"></div>
+                    <div><img src="" alt="in"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center ml-72 mr-72">
+            <p class="font-thin text-center">
+                Pesabazaar corn is organised and regulated by the insurance Regulatory Authority of Kenya.
+                Licence
+                Number:IRA/05/30639/2016
+                Please refer to <a href="">Terms $ Conditions On this Website</a>
+                @2023 allrights reserved
+            </p>
+        </div>
+    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
